@@ -1,0 +1,100 @@
+$width-site: 1200px;
+$border-width: 3px;
+$color-block:rgb(122, 122, 122);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.site{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    flex-grow: 1;
+}
+
+header{
+    background: linear-gradient(#6471e6, #9198e5);
+    width: $width-site;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    .logo{
+        width: 400px;
+        height: 140px;
+        background-color: rgb(189, 204, 255);
+        position: absolute;
+        top: 14%;
+        left: 5%;
+        text-align: center;
+        padding-top: auto;
+        padding-bottom: auto;
+        font-size: 30px;
+    }
+    nav{
+        width: 700px;
+        position: absolute;
+        top: 12%;
+        left: 40%;
+    }
+    .ul_style_header{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    .list_style_header{
+        list-style-type: none;
+    }
+    .link{
+        text-decoration: none;
+        font-size: 24px;
+        font-family: sans-serif;
+        color:rgb(255, 254, 212);
+    }
+    .header_text{
+        position: absolute;
+        width: 630px;
+        top: 40%;
+        left: 43%;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(253, 252, 198);
+        text-align: justify;
+    }
+}
+
+.text{
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 18, 39)
+}
+
+.content{
+    padding: 50px 0;
+    width: $width-site;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    section{
+        width: $width-site / 3 - 2* $border-width;
+        height: 200px;
+        border: $border-width solid black;
+        margin-bottom: 6px;
+        background-color: rgb(189, 204, 255);
+    }
+}
+
+footer{
+    height: 100px;
+    background: linear-gradient(#9198e5,#6471e6 );
+    width: $width-site;
+    margin: 0 auto;
+}
